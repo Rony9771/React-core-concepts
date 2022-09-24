@@ -3,8 +3,16 @@ import './App.css';
 
 
 function App() {
+  const players =['Tamim', 'Bijoy', 'Shakib', 'Mushi', 'Liton']
   return (
     <div className="App">
+      {
+        players.map(player => <h1>{player}</h1>)
+      }
+      {
+        players.map(player => <Person name = {player}></Person>)
+      }
+
       <Person name="M.S Dhoni" Profession="Cricketer"></Person>
       <Person name="Shakib Al Hasan" Profession="Businessman"></Person>
         
